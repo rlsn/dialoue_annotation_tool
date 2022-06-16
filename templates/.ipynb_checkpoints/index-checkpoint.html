@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>闲聊小技能</title>
+    </head>
+    <body>
+    <h1>对对子</h1>
+        <div align="left" style="margin-top:30px">
+        <form method="post" name="couplet">
+            <label for="fname">上联：</label>
+            <input type="text" id="upper" name="upper" placeholder = "落霞与孤鹜齐飞" value = "{{ UPPER }}">
+            <input type="submit" name="coupgen" value="生成"><br>
+            <label for="fname">下联：</label>
+            <input type="text" id="lower" name="lower" placeholder = "" readonly="readonly" value = "{{ LOWER }}"><br>
+        </form>
+        </div>
+
+        <h1>藏头诗</h1>
+        <div align="left" style="margin-top:30px">
+        <form method="post" name="acrostic">
+            <label for="fname">头：</label>
+            <input type="text" id="lead" name="lead" placeholder = "天猫精灵" value = "{{ LEAD }}">
+            <input type="submit" name="acrogen" value="生成"><br>
+            <label for="fname">藏头诗：</label>
+            <p>{{ POEM }}</p>
+        </form>
+        </div>
+
+    </body>
+</html>
